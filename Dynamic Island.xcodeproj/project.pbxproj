@@ -10,20 +10,39 @@
 		FDA790952A2BAC7C00F9B4F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA790942A2BAC7C00F9B4F8 /* AppDelegate.swift */; };
 		FDA790972A2BAC7C00F9B4F8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA790962A2BAC7C00F9B4F8 /* SceneDelegate.swift */; };
 		FDA790992A2BAC7C00F9B4F8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA790982A2BAC7C00F9B4F8 /* ViewController.swift */; };
-		FDA7909C2A2BAC7C00F9B4F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDA7909A2A2BAC7C00F9B4F8 /* Main.storyboard */; };
 		FDA7909E2A2BAC7E00F9B4F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDA7909D2A2BAC7E00F9B4F8 /* Assets.xcassets */; };
 		FDA790A12A2BAC7E00F9B4F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDA7909F2A2BAC7E00F9B4F8 /* LaunchScreen.storyboard */; };
+		FDA790C72A2BB23700F9B4F8 /* DynamicIslandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA790C62A2BB23700F9B4F8 /* DynamicIslandView.swift */; };
+		FDA790CA2A2BB2DD00F9B4F8 /* DynamicIslandViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA790C92A2BB2DD00F9B4F8 /* DynamicIslandViewViewModel.swift */; };
+		FDA790CC2A2BB4C600F9B4F8 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA790CB2A2BB4C600F9B4F8 /* Extensions.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FDA790C22A2BB11C00F9B4F8 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		FDA790912A2BAC7C00F9B4F8 /* Dynamic Island.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dynamic Island.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDA790942A2BAC7C00F9B4F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDA790962A2BAC7C00F9B4F8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FDA790982A2BAC7C00F9B4F8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FDA7909B2A2BAC7C00F9B4F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FDA7909D2A2BAC7E00F9B4F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FDA790A02A2BAC7E00F9B4F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FDA790A22A2BAC7E00F9B4F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDA790AE2A2BB11A00F9B4F8 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		FDA790B02A2BB11A00F9B4F8 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		FDA790C62A2BB23700F9B4F8 /* DynamicIslandView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicIslandView.swift; sourceTree = "<group>"; };
+		FDA790C92A2BB2DD00F9B4F8 /* DynamicIslandViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicIslandViewViewModel.swift; sourceTree = "<group>"; };
+		FDA790CB2A2BB4C600F9B4F8 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				FDA790932A2BAC7C00F9B4F8 /* Dynamic Island */,
+				FDA790AD2A2BB11A00F9B4F8 /* Frameworks */,
 				FDA790922A2BAC7C00F9B4F8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,15 +76,58 @@
 		FDA790932A2BAC7C00F9B4F8 /* Dynamic Island */ = {
 			isa = PBXGroup;
 			children = (
-				FDA790942A2BAC7C00F9B4F8 /* AppDelegate.swift */,
-				FDA790962A2BAC7C00F9B4F8 /* SceneDelegate.swift */,
-				FDA790982A2BAC7C00F9B4F8 /* ViewController.swift */,
-				FDA7909A2A2BAC7C00F9B4F8 /* Main.storyboard */,
+				FDA790C82A2BB2CE00F9B4F8 /* ViewModels */,
+				FDA790C42A2BB1E200F9B4F8 /* Views */,
+				FDA790C52A2BB1F000F9B4F8 /* ViewControllers */,
+				FDA790C32A2BB1BE00F9B4F8 /* Sources */,
 				FDA7909D2A2BAC7E00F9B4F8 /* Assets.xcassets */,
 				FDA7909F2A2BAC7E00F9B4F8 /* LaunchScreen.storyboard */,
 				FDA790A22A2BAC7E00F9B4F8 /* Info.plist */,
 			);
 			path = "Dynamic Island";
+			sourceTree = "<group>";
+		};
+		FDA790AD2A2BB11A00F9B4F8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FDA790AE2A2BB11A00F9B4F8 /* WidgetKit.framework */,
+				FDA790B02A2BB11A00F9B4F8 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FDA790C32A2BB1BE00F9B4F8 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				FDA790942A2BAC7C00F9B4F8 /* AppDelegate.swift */,
+				FDA790962A2BAC7C00F9B4F8 /* SceneDelegate.swift */,
+				FDA790CB2A2BB4C600F9B4F8 /* Extensions.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		FDA790C42A2BB1E200F9B4F8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FDA790C62A2BB23700F9B4F8 /* DynamicIslandView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FDA790C52A2BB1F000F9B4F8 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FDA790982A2BAC7C00F9B4F8 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FDA790C82A2BB2CE00F9B4F8 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				FDA790C92A2BB2DD00F9B4F8 /* DynamicIslandViewViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,6 +140,7 @@
 				FDA7908D2A2BAC7C00F9B4F8 /* Sources */,
 				FDA7908E2A2BAC7C00F9B4F8 /* Frameworks */,
 				FDA7908F2A2BAC7C00F9B4F8 /* Resources */,
+				FDA790C22A2BB11C00F9B4F8 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
@@ -127,7 +191,6 @@
 			files = (
 				FDA790A12A2BAC7E00F9B4F8 /* LaunchScreen.storyboard in Resources */,
 				FDA7909E2A2BAC7E00F9B4F8 /* Assets.xcassets in Resources */,
-				FDA7909C2A2BAC7C00F9B4F8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +202,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDA790992A2BAC7C00F9B4F8 /* ViewController.swift in Sources */,
+				FDA790CC2A2BB4C600F9B4F8 /* Extensions.swift in Sources */,
+				FDA790C72A2BB23700F9B4F8 /* DynamicIslandView.swift in Sources */,
+				FDA790CA2A2BB2DD00F9B4F8 /* DynamicIslandViewViewModel.swift in Sources */,
 				FDA790952A2BAC7C00F9B4F8 /* AppDelegate.swift in Sources */,
 				FDA790972A2BAC7C00F9B4F8 /* SceneDelegate.swift in Sources */,
 			);
@@ -147,14 +213,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		FDA7909A2A2BAC7C00F9B4F8 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FDA7909B2A2BAC7C00F9B4F8 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FDA7909F2A2BAC7E00F9B4F8 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,9 +350,9 @@
 				INFOPLIST_FILE = "Dynamic Island/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -320,9 +378,9 @@
 				INFOPLIST_FILE = "Dynamic Island/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
